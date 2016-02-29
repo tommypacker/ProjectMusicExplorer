@@ -3,6 +3,14 @@
 		<div class="post">
 			<h2 class="post-title"><%= post.title %></h2>
 			<%= link_to "View Post", post_path(post.id), class: "btn btn-default" %>
+			<%= link_to like_post_path(post.id), method: :put do %>
+				Upvote
+			  	<%= post.get_upvotes.size %>
+			<% end %>
+			<%= link_to dislike_post_path(post.id), method: :put do %>
+			  	Downvote
+			  	<%= post.get_downvotes.size %>
+			<% end %>
 		</div>
 	</div>
 <% end %>
