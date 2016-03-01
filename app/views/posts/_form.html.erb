@@ -1,6 +1,6 @@
 <%= simple_form_for @post do |p| %>
-  <%= p.input :title %>
-  <%= p.input :url %>
-  <%= p.input :description %>
+  <%= p.input :title, placeholder: "Title", :required => true %>
+  <%= p.input :url, placeholder: "Please enter link with 'https'", :input_html => {:type => 'url'} %>
+  <%= p.input :description, placeholder: "Maximum 2000 characters", :input_html => {:maxlength => 2000} %>
   <%= p.button :submit %>
 <% end %>
