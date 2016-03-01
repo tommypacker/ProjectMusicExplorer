@@ -59,7 +59,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default {
-
 	padding-top: 5px;
 	padding-bottom: 5px;
 	background-color: #fff;
@@ -70,14 +69,19 @@ h1, h2, h3, h4, h5, h6 {
 
 	.navbar-link {
 		color: #222;
+		background-color: transparent;
+		&:hover{
+			text-decoration: none;
+			color: #4d4d4d;
+		}
 	}
 
 	.navbar-brand {
 		color: #222;
 		letter-spacing: 1.1px;
 	}
-
 }
+
 
 
 /* Links styles */
@@ -100,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 10px;
 	padding: 1.4em 1.4em;
 	height: 150px;
-	border-bottom: 4px solid #0a8fd5;
+	border-bottom: 4px solid orange;
 
 	.post-title {
 		font-size: 1.5em;
@@ -113,6 +117,24 @@ h1, h2, h3, h4, h5, h6 {
 
 	.btn-custom {
 		margin-top: 20px;
+		display:inline-block;
+	}
+
+	.post-votes{
+		margin-top: 20px;
+		display:inline-block;
+		margin-left: 10px;
+		text-decoration: none;
+	}
+
+	.post-links{
+		color: white;
+		background-color: transparent;
+		margin-left: 10px;
+		&:hover{
+			text-decoration: none;
+			color: orange;
+		}
 	}
 
 }
