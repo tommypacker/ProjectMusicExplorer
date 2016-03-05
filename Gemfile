@@ -14,6 +14,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'soundcloud'
+gem 'rspotify'
 gem 'envyable'
 
 group :development, :test do
