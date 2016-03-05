@@ -1,9 +1,9 @@
 <div class="col-md-8 col-md-offset-2">
 	<div class="post-show">
 		<h2><%= @post.title %></h2>
-		<h3>Rating: <%= @post.get_upvotes.size-@post.get_downvotes.size %></h1>
+		<h3 class="post-rating">Rating: <%= @post.get_upvotes.size-@post.get_downvotes.size %></h3>
 		<p class="post-posted-by">Posted by <%= @post.user.email %> <%= time_ago_in_words(@post.created_at) %> ago</p>
-		<p><%= link_to @post.url, @post.url %></p>
+		<p><%= link_to @post.url, @post.url, class: "post-url" %></p>
 		<p class="post-desc"><%= @post.description %></p>
 
 		<h3>Comments:</h3>

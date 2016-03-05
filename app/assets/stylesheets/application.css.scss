@@ -156,12 +156,29 @@ h1, h2, h3, h4, h5, h6 {
 
 	h2 {
 		margin-top: 0;
+		display:inline-block;
+		font-weight: 400;
+	}
+
+	.post-rating{
+		display:inline-block;
+		position: absolute;
+    	right: 40px;
+		margin-top: 0;
 	}
 
 	.post-desc {
 		font-size: 1.1em;
 		line-height: 1.75;
 		margin-bottom: 50px;
+	}
+
+	.post-url{
+		color: orange;
+		background-color: transparent;
+		&:hover{
+			text-decoration: none;
+		}
 	}
 
 	.post-posted-by {
